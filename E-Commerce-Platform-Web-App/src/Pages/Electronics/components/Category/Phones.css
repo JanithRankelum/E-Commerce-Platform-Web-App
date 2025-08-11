@@ -1,0 +1,238 @@
+.phones-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.product-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.product-rating-sold {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.product-heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.heart-image {
+    width: 20px;
+    height: 20px;
+}
+
+.product-save {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.back-button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background: #555;
+}
+
+.product-container {
+    padding: 60px;
+    font-family: Arial, sans-serif;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: -60px;
+}
+
+.product-card {
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.eproduct-heart-icon {
+    position: absolute;
+    bottom: 52px;
+    right: 24px;
+    font-size: 2rem;
+    color: #e9304c;
+    background-color: #fde2e2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.product-heart-icon:hover {
+    background-color: #f6f6f6;
+}
+
+.product-image {
+    margin-top: 10px;
+    width: 100%;
+    height: 180px;
+    object-fit: fill;
+}
+
+.product-details {
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.product-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+
+.product-price {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.product-rating-sold {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.product-rating {
+    font-size: 0.9rem;
+    color: #7f7f7f;
+    font-weight: bold;
+}
+
+.star {
+    color: rgb(237, 195, 44);
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: #fff;
+}
+
+.product-sold {
+    font-size: 0.8rem;
+    color: #7f7f7f;
+    font-weight: bolder;
+    margin-left: 0.4rem;
+    margin-bottom: 10px;
+}
+
+.product-cart-btn {
+    position: absolute;
+    bottom: 52px;
+    right: 24px;
+    background-color: #ff666b;
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease;
+}
+
+.product-cart-btn:hover {
+    background-color: #ff6b81d9;
+}
+
+.product-save {
+    font-size: 0.9rem;
+    color: green;
+    margin-bottom: -5px;
+    text-align: center;
+    position: relative;
+}
+
+.underline-card {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+    display: block;
+}
+
+.cart-image {
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    object-fit: contain;
+}
+
+.heart-image {
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.heart-image:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,139 @@
+#footer {
+  width: 100%;
+  height: 400px;
+  background-color: #ff666b;
+  color: white;
+  font-family: sans-serif;
+  padding: 30px 0 0 0;
+  justify-content: center;
+}
+
+.footer-container {
+  width: 98%;
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#footer-details {
+  width: 20vw;
+  text-align: center;
+  font-size: 1.5vw;
+  
+}
+
+#footer-details-main {
+  width: 40vw;
+  text-align: center;
+  align-self: center;
+  font-size: 1.5vw;
+}
+
+#footer-details ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer-details li {
+  text-decoration: none;
+}
+
+#footer-details span {
+  font-weight: 900;
+  top: 1vw;
+}
+
+#footer-details-main img {
+  margin: 0.2vw;
+}
+
+#footer-end {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+  font-size: 1.8vw;
+  background-color: #ff666b;
+}
+
+#footer-end hr {
+  width: 90%;
+  height: 1px;
+  background-color: #ffffff;
+  border: none;
+}
+
+#footer-end p {
+ margin-bottom: 0;
+}
+
+#storeImage {
+  width: 70%;
+  margin: 0.2vw;
+}
+
+#footer-details-main p {
+  margin: 0 0 0 2vw;
+}
+
+#cardImage {
+  width: 4vw;
+  margin: 0.2vw;
+}
+
+#image:hover {
+  transform: scale(1.1);
+}
+
+#contact-us:hover {
+  color: black;
+  transform: scale(1.1);
+  text-shadow: 0 0 20px rgb(37, 137, 243);
+}
+
+
+
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 640px) {
+  #footer-details {
+    width: 20vw;
+    text-align: center;
+    align-self: center;
+    font-size: 2vw;
+  }
+
+  #footer-details-main {
+    width: 40vw;
+    text-align: center;
+    align-self: center;
+    font-size: 2vw;
+  }
+
+  #image {
+    width: 5vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  #footer {
+    height: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  #footer {
+    height: 180px;
+  }
+}
+
+@media (max-width: 320px) {
+  #footer {
+    height: 150px;
+  }
+}

@@ -1,0 +1,572 @@
+.product-container {
+    padding: 60px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: -60px;
+  }
+  
+  .product-card {
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    position: relative;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .eproduct-heart-icon {
+    position: absolute;
+    bottom: 52px;
+    right: 24px;
+    font-size: 2rem;
+    color: #e9304c;
+    background-color: #fde2e2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+  
+  .product-heart-icon:hover {
+    background-color: #f6f6f6;
+  }
+  
+  .product-image {
+    margin-top: 10px;
+    width: 100%;
+    height: 180px;
+    object-fit: fill;
+  }
+  
+  .product-details {
+    padding: 15px;
+    background-color: #ffffff;
+  }
+  
+  .product-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-left: 5px;
+    margin-bottom: 2px;
+  }
+  
+  .product-price {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 50px;
+  }
+  
+  .product-rating-sold {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .product-rating {
+    font-size: 0.9rem;
+    color: #7f7f7f;
+    font-weight: bold;
+  }
+  
+  .star {
+    color: rgb(237, 195, 44);
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: #fff;
+  }
+  
+  .product-sold {
+    font-size: 0.8rem;
+    color: #7f7f7f;
+    font-weight: bolder;
+    margin-left: 0.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-cart-btn {
+    position: absolute;
+    bottom: 52px;
+    right: 24px;
+    background-color: #ff666b;
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-cart-btn:hover {
+    background-color: #ff6b81d9;
+  }
+  
+  .product-save {
+    font-size: 0.9rem;
+    color: green;
+    margin-bottom: -5px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .underline-card {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+    display: block;
+  }
+  
+  .cart-image {
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    object-fit: contain;
+  }
+  
+  .heart-image {
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .heart-image:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Popup Styles */
+  .popup-panel {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 96%;
+    display: flex;
+    gap: 50px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 80%;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .popup-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 14px;
+    gap: 14px;
+  }
+  
+  .popup-details h2 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bolder;
+  }
+  
+  .info-container {
+    display: flex; /* Align all child elements horizontally */
+    gap: 20px; /* Adjust spacing between the rating, favorite, and sold sections */
+    align-items: center; /* Ensure vertical alignment */
+  }
+  
+  .rating, .favourite, .sold {
+    display: flex; /* Align elements inside each section horizontally */
+    align-items: center; /* Align items vertically within each section */
+    gap: 5px; /* Adjust spacing between the icon and the text */
+  }
+  
+  .star {
+    color: #ffd700; /* Yellow for the star */
+    font-size: 16px; /* Adjust size */
+  }
+  
+  .rating-value {
+    color: #6c757d; /* Black for the rating value */
+    margin-top: 5px;
+    font-weight: bolder;
+  }
+  
+  .heart {
+    color: #ff0000; /* Red for the heart */
+    font-size: 16px; /* Adjust size */
+  }
+  
+  .likes-value {
+    color: #6c757d; /* Black for the likes value */
+    margin-top: 5px;
+    font-weight: bolder;
+  }
+  
+  .sold {
+    color: #6c757d; /* Black for the sold value */
+    margin-top: 5px;
+    font-weight: bolder;
+  }
+  
+  .popup-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  .popup-actions {
+    margin-top: 20px;
+  }
+  
+  .popup-buttons {
+    display: flex;
+    gap: 20px; /* Adjust spacing between buttons */
+    justify-content: flex-start; /* Align buttons to the left */
+    margin-top: 20px; /* Add spacing above the buttons */
+    margin-left: 10px;
+  }
+  
+  .popup-add-to-cart, .popup-details-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .popup-add-to-cart {
+    background-color: #007bff; /* Add to cart button color */
+    color: white;
+    width: 47%;
+  }
+  
+  .popup-details-btn {
+    background-color: #6c757d; /* Details button color */
+    color: white;
+    width: 47%;
+  }
+  
+  .popup-add-to-cart:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .popup-details-btn:hover {
+    background-color: #5a6268; /* Darker grey on hover */
+  }
+  
+  
+  .popup-image-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 80px;
+    object-fit: cover;
+    gap: 10px;
+  }
+  
+  .popup-main-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-left: 40px;
+    object-fit: cover;
+  }
+  
+  .right-image {
+    width: 20%; /* Adjust the width as needed */
+    height: auto; /* Keep the aspect ratio */
+    object-fit: contain; /* Optional: ensures the image does not get distorted */
+    position: absolute; /* Or relative, depending on layout needs */
+    right: 4%; /* Align it to the right side of the container */
+    top: 64%; /* Vertically center it */
+    transform: translateY(-50%); /* Adjust for precise vertical centering */
+  }
+  
+  .popup-right-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .popup-thumbnail-images {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .thumbnail {
+    flex: 1;
+    height: 50%;
+    width: 50%;
+    background: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    border: 2px solid transparent;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .thumbnail:hover,
+  .thumbnail:focus {
+    border: 2px solid #e74c3c;
+  }
+  
+  .popup-colors .color-box {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 18px;
+    transition: border 0.3s ease-in-out;
+  }
+  .model{
+    margin-top: -20px;
+  }
+  
+  .popup-colors .color-box.selected-color {
+    border: 4px solid #ef4e3c;
+  }
+  
+  .popup-colors p {
+    margin-bottom: 8px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .popup-quantity {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    margin: 10px 0;
+  }
+  
+  .popup-quantity p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: -40px;
+    margin-right: 10px;
+  }
+  
+  .quantity-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 120px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: -54px;
+  }
+  
+  .quantity-box button {
+    width: 40px;
+    height: 100%;
+    background-color: #e74c3c;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .quantity-box button:hover {
+    background-color: #c0392b;
+  }
+  
+  .quantity-box button:active {
+    transform: scale(0.95);
+  }
+  
+  .quantity-box span {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #333;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    line-height: 40px;
+  }
+  
+  .popup-capacity .capacity-button {
+    padding: 8px 15px;
+    margin-right: 8px;
+    margin-left: 20px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .popup-capacity .capacity-button.selected {
+    background: #e74c3c;
+    color: white;
+    border-color: #e74c3c;
+  }
+  
+  .popup-capacity p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .close-popup-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .popup-panel:hover .close-popup-btn {
+    display: flex;
+  }
+  
+  .close-popup-btn:hover {
+    background-color: #ff666b;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  .close-popup-btn:active {
+    transform: scale(0.9);
+  }
+  
+  .popup-panel:hover .close-popup-btn {
+    opacity: 1;
+  }
+  /* Disable scrolling when popup is open */
+  .no-scroll {
+    overflow: hidden;
+  }
+  
+  
+  /* Responsive Design for Small Screens */
+  @media (max-width: 768px) {
+    .popup-panel {
+      flex-direction: column; /* Stack content vertically */
+      width: 90%; /* Adjust width to fit smaller screens */
+      height: auto; /* Allow height to adjust dynamically */
+      padding: 15px; /* Reduce padding */
+      gap: 20px; /* Adjust spacing between sections */
+    }
+  
+    .popup-image-section {
+      margin-left: 0; /* Reset margin */
+      object-fit: contain; /* Ensure images scale properly */
+    }
+  
+    .popup-main-image {
+      margin-left: 0; /* Reset margin */
+      width: 100%; /* Fit image to the width */
+    }
+  
+    .popup-details {
+      margin-left: 0; /* Reset margin */
+      margin-top: 10px; /* Adjust spacing */
+      gap: 10px; /* Adjust spacing between details */
+    }
+  
+    .popup-description {
+      white-space: pre-line; /* Allows text to preserve line breaks */
+    }
+    
+  
+    .popup-buttons {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 10px; /* Add spacing between buttons */
+      margin-left: 0; /* Reset margin */
+      width: 100%; /* Fit buttons to the container */
+    }
+  
+    .popup-add-to-cart,
+    .popup-details-btn {
+      width: 100%; /* Make buttons take full width */
+    }
+  
+    .popup-colors {
+      flex-wrap: wrap; /* Allow colors to wrap on smaller screens */
+    }
+  
+    .popup-thumbnail-images {
+      flex-wrap: wrap; /* Allow thumbnails to wrap on smaller screens */
+      gap: 5px; /* Adjust spacing between thumbnails */
+    }
+  
+    .thumbnail {
+      flex: 1 1 45%; /* Adjust thumbnail size */
+      height: 80px; /* Set appropriate height */
+    }
+  
+    .quantity-box {
+      margin: 0; /* Adjust margin */
+      width: 100px; /* Adjust width for smaller screens */
+    }
+  
+    .popup-capacity .capacity-button {
+      margin-top: 10px; /* Adjust spacing */
+    }
+  
+    .close-popup-btn {
+      top: 10px; /* Adjust position */
+      right: 10px; /* Adjust position */
+    }
+  }
+  

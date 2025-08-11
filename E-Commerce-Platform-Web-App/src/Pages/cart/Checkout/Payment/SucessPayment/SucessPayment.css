@@ -1,0 +1,23 @@
+#aa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container img{
+    width:"150px";
+    height:auto;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.container h3 {
+    color: #555;
+    font-size: 18px;
+    margin-top: 0;
+}

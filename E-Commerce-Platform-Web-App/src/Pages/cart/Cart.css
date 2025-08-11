@@ -1,0 +1,125 @@
+.Shopping-cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ddd;  
+  }
+  
+  .cart-items {
+    flex: 2;  
+    padding: 20px;
+    border: 1px solid #fff;
+    border-bottom-left-radius: 8px;
+    background-color: #e7b0c2;
+    border-top-left-radius: 8px;
+  }
+  
+  .remove-item {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .remove-item:hover {
+    background-color: rgb(226, 49, 49);
+    color: #000;
+  }
+  
+  .cart-summary {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .cart-item {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .item-details {
+    flex:2;
+    margin-left: 40px;
+  }
+
+  .item.quantity{
+    display:flex;
+    align-items: center;
+  }
+
+  .item.quantity button{
+    width: 30px;
+    height:30px;
+    background-color: #ddd;
+    border:none;
+    cursor: pointer;
+  }
+
+  .item.quantity span{
+    margin: 0 10px;
+  }
+
+  .item-price {
+    flex:1;
+    text-align: right;
+  }
+
+  .remove-item {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+  }
+
+  .summary-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .summary-item select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+
+  .checkout-button {
+    width: 100%;
+    padding: 10px;
+    background: #ff666b;
+    color: black;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .checkout-button:hover{
+    background-color: #c88e8e;
+  }
+
+  .back-to-shop{
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .back-to-shop:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  

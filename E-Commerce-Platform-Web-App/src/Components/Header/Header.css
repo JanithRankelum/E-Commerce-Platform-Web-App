@@ -1,0 +1,76 @@
+#storeLogoSmall {
+    visibility: hidden;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    background-color: #ffffff;
+}
+
+#storeLogo {
+    position: absolute;
+    left: 3rem;
+}
+
+header {
+    text-align: center;
+    margin: 1rem;
+
+}
+
+header img {
+    object-fit: contain;
+}
+
+#search-bar {
+    align-items: center;
+    border: 1px solid #23d43b;
+    border-radius: 5px;
+    padding: 0.6rem;
+    background: #f0f1f1;
+    width: 20rem;
+}
+
+#imgClick {
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+#imgClick:hover {
+    box-shadow: 0 0px 8px 0 rgb(255, 3, 3);
+}
+
+
+
+
+
+
+
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 730px) {
+    #storeLogo {
+        visibility: hidden;
+    }
+    #storeLogoSmall {
+        visibility: visible;
+    }
+    #storeLogoSmall {
+        position: absolute;
+        left: 1rem;
+    }
+    #search-bar {
+        width: 6rem;
+    }
+    ul {
+        gap: 0.2rem;
+    }
+}

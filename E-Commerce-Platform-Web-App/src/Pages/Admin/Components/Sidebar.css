@@ -1,0 +1,129 @@
+.sidebar {
+    width: 12%;
+    background-color: #ffb0b0;
+    padding: 20px;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .sidebar.closed {
+    width: 50px; /* Collapsed sidebar width */
+    background-color: transparent;
+    left: 0;
+  }
+  
+  .sidebar ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin-top: 1vw;
+    align-items: center;
+  }
+  
+  .sidebar li {
+    margin-bottom: 1.5vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  #buttonLi {
+    margin-top: 15vw;
+  }
+  
+  .sidebar li.active,
+  .sidebar li:hover {
+    background-color: #ff8484;
+    border-radius: 5px;
+  }
+  
+
+  
+  .sidebar.closed ul {
+    display: none; /* Hide menu items when sidebar is collapsed */
+    background-color: transparent;
+  }
+
+  .toggle-btn {
+    background-color: #ff8484; /* Button background color */
+    color: #ffffff; /* Button text color */
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%; /* Make it circular */
+    width: 40px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    display: block;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    position: absolute;
+    top: 60px;
+    right: -20px; /* Position the button slightly outside */
+    transition: all 0.3s ease; /* Smooth transitions */
+  }
+  
+  .toggle-btn:hover {
+    background-color: #ffb0b0; /* Lighter background on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  .toggle-btn:active {
+    transform: scale(0.9); /* Shrink on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow on click */
+  }
+
+
+  @media screen and (max-width: 1024px) {
+    .sidebar {
+      width: 20%; /* Slightly wider for medium screens */
+    }
+  
+    .sidebar.closed {
+      width: 40px;
+    }
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 24%; /* Adjust sidebar width for tablets */
+      left: 0;
+    }
+  
+    .sidebar.closed {
+      width: 40px;
+      left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .sidebar {
+      width: auto; /* Full width for small screens */
+      height: auto;
+      left: 0;
+      min-height: 0; /* Remove fixed height for flexibility */
+      position: relative; /* Not fixed to allow scrolling */
+    }
+  
+    .sidebar.closed {
+      width: 0; /* Hide completely when closed */
+      overflow: hidden; /* Prevent content overflow */
+    }
+  
+    .toggle-btn {
+      top: 10px; /* Adjust toggle button position */
+      right: 10px;
+    }
+  }
+  
+  
