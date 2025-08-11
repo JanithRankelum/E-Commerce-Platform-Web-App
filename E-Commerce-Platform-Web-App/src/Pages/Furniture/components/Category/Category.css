@@ -1,0 +1,63 @@
+/* Section Container */
+.category-section {
+  padding: 50px;
+}
+
+/* Category container */
+.category-container,
+.additional-category-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px; /* Adjusted for consistent spacing */
+}
+
+/* Individual category card */
+.category-card {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Category icon */
+.category-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 8px; /* Optional */
+}
+
+/* Category name */
+.category-card p {
+  margin: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+/* Hover effect */
+.category-card:hover {
+  border-color: orange;
+  background-color: #fff8e1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Additional category container */
+.additional-category-container {
+  border-top: 1px solid #ddd; /* Optional: Separator line for distinction */
+  padding-top: 20px;
+}
+
+  

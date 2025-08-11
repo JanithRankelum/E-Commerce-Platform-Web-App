@@ -1,0 +1,22 @@
+/* Carousel.css */
+
+.carousel-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; /* Center the carousel */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Hide overflow to maintain dimensions */
+  background-color: #f0f0f0; /* Optional: background color for the container */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for the carousel */
+  border-radius: 20px; /* Optional border radius for styling */
+}
+
+.carousel-container img {
+  width: 100%; /* Ensure image covers the entire width */
+  height: 100%; /* Ensure image covers the entire height */
+  object-fit: cover; /* Image will adjust to fit container */
+}
+
+  

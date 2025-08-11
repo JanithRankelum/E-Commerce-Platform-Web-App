@@ -1,0 +1,142 @@
+.offers-container {
+  padding: 60px;
+  font-family: Arial, sans-serif;
+}
+
+.offers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.offers-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  margin: 0;
+}
+
+.offers-header .highlight {
+  color: red;
+}
+
+.underline-1 {
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  width: 95%;
+  height: 1px;
+  border-radius: 20px;
+  background-color: #ddd;
+}
+
+.underline-2 {
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  width: 28%;
+  height: 6px;
+  border-radius: 20px;
+  background-color: red;
+}
+
+.view-all {
+  font-size: 0.9rem;
+  color: red;
+  border: none;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 80px;
+}
+
+.offer-card {
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.offer-card:hover {
+  transform: scale(1.05);
+}
+
+.offer-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 0 0 0 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.offer-image {
+  margin-top: 10px;
+  width: 100%;
+  height: 180px;
+  object-fit: fill;
+}
+
+.offer-details {
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.offer-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 14px;
+
+  /* Ensure product names stay on one line */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflowed text */
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflowed text */
+  display: block; /* Ensure proper block formatting */
+}
+
+.offer-price {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.offer-price .original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 5px;
+}
+
+.offer-save {
+  font-size: 0.9rem;
+  color: green;
+  margin: 0px 0;
+  position: relative;
+}
+
+.underline-card {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 10px 0;
+  display: block;
+}

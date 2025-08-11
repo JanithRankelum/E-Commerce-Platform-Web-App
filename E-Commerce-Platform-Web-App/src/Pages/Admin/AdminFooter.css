@@ -1,0 +1,259 @@
+#afooter {
+  width: 100%;
+  height: 80px;
+  background-color: #ff666b;
+  color: white;
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+#footer-end {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+  font-size: 1.8vw;
+  background-color: #ff666b;
+}
+
+#footer-end p {
+  margin: 1vw;
+}
+
+#logo-ul {
+  justify-items: left;
+  padding: 1vw 0 0 1vw;
+}
+
+#logo-main {
+  width: 20vw;
+}
+
+#go-back {
+  display: flex;
+  background-color: #04AA6D;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 500;
+  border: 1px solid #267e5d;
+  border-radius: 0.8vw;
+  width: 10vw;
+  padding: 0.5vw;
+  margin: 0 0 0 1vw;
+  cursor: pointer;
+  justify-content: center;
+}
+
+
+
+#login-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+#login-header {
+  display: flex;
+  flex-direction: row;
+  font-family: sans-serif;
+  margin: 1vw;
+  cursor: default;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#login-header h2 {
+  margin: 0;
+  font-size: 3vw;
+}
+
+#login-header h3 {
+  margin: 0;
+  font-size: 1.5vw;
+  border: 1px solid rgba(255, 255, 255, 0.637);
+  padding: 0.3vw;
+  background: #c0bfbf33;
+  color: #04AA6D;
+  box-shadow: 0 0px 8px 0 #ff666b;
+}
+
+#login-header h3:hover {
+  border: 1px solid #04AA6D;
+  background: #04AA6D;
+  color: #ffffff;
+  box-shadow: 0 0px 8px 0 #ff666b;
+}
+
+#nameSpan {
+  color: #ff666b;
+}
+
+/*login*/
+
+#alogin-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+#aform-container {
+  display: flex;
+  justify-content: center;
+}
+
+#aform {
+  display: flex;
+  width: 50%;
+  height: inherit;
+  cursor: default;
+  background: #f7d9d923;
+  font-family: sans-serif;
+  margin: 1vw 5vw 1vw 5vw;
+  padding: 1vw 0 1vw 0;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0px 8px 0 #ff666b;
+}
+
+#form-header {
+  font-size: 2.5vw;
+  margin: 1vw;
+}
+
+#aform-input-u {
+  font-size: 1.5vw;
+  border: 1px solid rgb(192, 189, 189);
+  border-radius: 0.8vw;
+  width: 37.6vw;
+  padding: 1vw;
+  margin: 0.3vw 1vw 0.3vw 1vw;
+}
+
+#aform-input-u:hover {
+  background-color: #555;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+#aform-input-u:hover::placeholder {
+  color: white;
+}
+
+#aform-input-u:focus {
+  background-color: #555;
+  color: white;
+}
+
+#aform-input-p {
+  font-size: 1.5vw;
+  border: 1px solid rgb(192, 189, 189);
+  border-radius: 0.8vw;
+  width: 37.6vw;
+  padding: 1vw;
+  margin: 0.3vw 1vw 0.3vw 1vw;
+}
+
+#aform-input-p:hover {
+  background-color: #555;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+#aform-input-p:hover::placeholder {
+  color: white;
+}
+
+#aform-input-p:focus {
+  background-color: #555;
+  color: white;
+}
+
+#aform-input-p-showPass {
+  display: flex;
+  margin: 0 1.5vw 0.3vw 1vw;
+  font-size: 1.5vw;
+  align-items: center;
+  justify-content: end;
+}
+
+#aform-input-p-showPass h5 {
+  margin: 0;
+  font-weight: 400;
+}
+
+#aform-submit {
+  display: flex;
+  background-color: #04AA6D;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 500;
+  border: 1px solid #267e5d;
+  border-radius: 0.8vw;
+  width: 40vw;
+  padding: 1vw;
+  margin: 0.3vw 1vw 0.3vw 1vw;
+  cursor: pointer;
+  justify-content: center;
+}
+
+#aform-submit:hover {
+  background-color: rgb(108, 108, 243);
+  color: #000;
+  border: 1px solid rgb(20, 20, 197);
+}
+
+#aform-check {
+  display: flex;
+  font-size: 1.5vw;
+  align-items: center;
+  margin: 0.3vw 1vw 0.3vw 1vw;
+}
+
+#aform-check input {
+  cursor: pointer;
+}
+
+#aform-check h4 {
+  font-weight: 400;
+  font-size: 1.5vw;
+  margin: 0.3vw 1vw 0.3vw 1vw;
+}
+
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 640px) {
+  #footer-details {
+    width: 20vw;
+    text-align: center;
+    align-self: center;
+    font-size: 2vw;
+  }
+
+  #footer-details-main {
+    width: 40vw;
+    text-align: center;
+    align-self: center;
+    font-size: 2vw;
+  }
+
+  #image {
+    width: 5vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  #footer {
+    height: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  #footer {
+    height: 180px;
+  }
+}
+
+@media (max-width: 320px) {
+  #footer {
+    height: 150px;
+  }
+}
