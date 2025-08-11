@@ -19,3 +19,22 @@ Developed as part of our **Full Stack Development coursework**, this project del
 🛠 **Modular Architecture** – Clean, maintainable, and scalable codebase  
 
 ---
+
+## 🖥️ Tech Stack
+
+**Frontend:**  
+- React.js (with Vite)  
+- HTML5, CSS3, JavaScript (ES6+)  
+- Responsive UI with TailwindCSS / Bootstrap  
+
+**Backend:**  
+- Node.js & Express.js  
+- MongoDB (Mongoose ODM)  
+
+**Other Tools & Services:**  
+- WebSockets (Real-time features)  
+- Mocha & Supertest (Testing)  
+- GitHub Actions (CI/CD)  
+- JWT (Authentication)  
+
+---
