@@ -4,6 +4,7 @@ A **scalable and modular e-commerce web application** designed for shopkeepers, 
 Developed as part of our **Full Stack Development coursework**, this project delivers a full-featured online shopping experience with a secure backend and an intuitive user interface.
 
 ---
+<img width="1896" height="929" alt="Screenshot 2025-08-12 094849" src="https://github.com/user-attachments/assets/9c8d37db-86d7-4664-8476-15036f46421f" />
 
 ## ✨ Features
 
